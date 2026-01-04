@@ -10,4 +10,4 @@ import tasksRouter from "./src/feature/timer/task.router.js";
 server.use(express.json());
 
 server.get("/",(req,res)=>res.json({message:"Welcome to Timer App's Backend"}));
-server.use(tasksRouter);
+server.use("/task",tasksRouter);
