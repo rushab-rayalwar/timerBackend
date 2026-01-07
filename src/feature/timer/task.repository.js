@@ -54,7 +54,7 @@ export default class TaskRepository {
             let tasks = await Task.aggregate([
                 {
                     $sort : {
-                        createdAt : -1
+                        createdAt : 1
                     }
                 }
             ]);
