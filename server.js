@@ -1,5 +1,6 @@
 // third party imports
 import express from "express";
+import cors from "cors";
 
 // local imports
 import connectToDB from "./src/config/mongoose.config.js";
