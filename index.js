@@ -8,13 +8,6 @@ import cors from "cors";
 import server from "./server.js";
 import tasksRouter from "./src/feature/timer/task.router.js";
 
-server.use(
-    cors({
-        origin:["http://localhost:5173", "https://rushabs-timer.onrender.com"], // NOTE THIS
-        methods:["GET", "POST", "PUT", "DELETE"],
-        credentials : true
-    })
-);
 server.use(express.json());
 
 server.get("/",(req,res,next)=>res.json({message:"Welcome to Timer App's Backend"}));
