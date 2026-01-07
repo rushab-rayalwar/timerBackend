@@ -7,6 +7,7 @@ export default class TaskController {
 
     async getAllTasks(req,res){
         let tasks = await this.repository.getAllTasks();
+        console.log(tasks);
         if(tasks.success){
             return res.status(tasks.code).json({success:true, data:tasks.data})
         } else {
