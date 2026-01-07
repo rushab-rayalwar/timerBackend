@@ -19,7 +19,7 @@ export default class TaskController {
         if(result.success){
             return res.status(result.code).json({success:true, data:result.data})
         } else {
-            return res.status(result.code).json({success:false, error})
+            return res.status(result.code).json({success:false, error:result.error})
         }
     }
     async deleteAll(req,res){
@@ -27,7 +27,7 @@ export default class TaskController {
         if(result.success){
             return res.status(result.code).json({success:true, data:result.data})
         } else {
-            return res.status(result.code).json({success:false, error})
+            return res.status(result.code).json({success:false, error:result.error})
         }
     }
 }
