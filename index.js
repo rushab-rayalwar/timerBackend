@@ -10,7 +10,7 @@ import tasksRouter from "./src/feature/timer/task.router.js";
 
 server.use(
     cors({
-        origin:["http://localhost:5173", "https://rushabs-timer.onrender.com/"],
+        origin:["http://localhost:5173", "https://rushabs-timer.onrender.com"],
         methods:["GET", "POST", "PUT", "DELETE"],
         credentials : true
     })
